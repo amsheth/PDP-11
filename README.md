@@ -6,5 +6,5 @@ This is my trial implementation of PDP-11 processor in System Verilog. I wanted 
 ##Resources Used
 I am using the books which are available online. 
 
-PDP-11_Processor_Handbook       -http://www.bitsavers.org/pdf/dec/pdp11/handbooks/PDP-11_Processor_Handbook_1981.pdf
-Pdp11-40                        -https://pdos.csail.mit.edu/6.828/2005/readings/pdp11-40.pdf
+* PDP-11_Processor_Handbook       -http://www.bitsavers.org/pdf/dec/pdp11/handbooks/PDP-11_Processor_Handbook_1981.pdf
+* Pdp11-40                        -https://pdos.csail.mit.edu/6.828/2005/readings/pdp11-40.pdf
