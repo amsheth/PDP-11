@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/13/2023 08:04:11 PM
+// Create Date: 05/14/2023 11:19:23 AM
 // Design Name: 
-// Module Name: PC
+// Module Name: address
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,22 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module PC(
-input clk, reset,btn,
-   input  [18:0] initial_pc,
-output logic [18:0] pc
+module address(
+
     );
- logic [18:0] init;
-always_ff @(posedge clk) begin
- if(initial_pc>=18'o770000||initial_pc<=18'o777)begin
- init<=16'h3000;
- end
- else init<=initial_pc; 
- if (~reset) begin
- pc <= init;
- end
- else if (btn) begin
- pc<=pc+18'h00001;
- end
-end
 endmodule
