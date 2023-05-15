@@ -3,7 +3,7 @@ This is my trial implementation of PDP-11 processor in System Verilog. I wanted 
 
 
 
-#Resources Used 
+# Resources Used 
 
 I am using the books which are available online. 
 
