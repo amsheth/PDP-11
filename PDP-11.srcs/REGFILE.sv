@@ -2,6 +2,7 @@ module REGFILE(
 				input logic 	clk, LDREG, Reset,
 				input logic		[15:0] 	bus,
 				input logic 	[2:0]	DR, SR1, SR2,
+				input logic     [15:0] PC,
 				output logic 	[15:0]	SR1_OUT, SR2_OUT
 				);
 
@@ -28,7 +29,7 @@ module REGFILE(
 				3'b100	:	outreg[4] <= bus;
 				3'b101	:	outreg[5] <= bus;
 				3'b110	:	outreg[6] <= bus;
-				3'b111	:	outreg[7] <= bus;
+				3'b111	:	outreg[7] <= PC;
 				default: ;
 			endcase
 		end

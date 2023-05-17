@@ -48,6 +48,17 @@ assign clkmax=25'h0fffff;
 reg [24:0] clkdiv;
 
 
+/////////////////////////// Bus logic //////////////////////////////Page 29 PDP-11 processor handbook pdf
+logic BBSY,SACK,BG,INTR,NPR,NPG,SACK;
+logic SSYN,MSYN;  /////master user sync
+logic [16:0] ISR;
+logic [3:0] BR,BG;
+
+
+
+
+
+
 always @(posedge clk)
      begin
         if (clkdiv == clkmax)

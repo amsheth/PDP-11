@@ -19,7 +19,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module CPU(input clk, reset,btn,
+module CPU(input clk, reset,btn, pause,
    input  [15:0] initial_pc,
 output logic [15:0] pc
     );
